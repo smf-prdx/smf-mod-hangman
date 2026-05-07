@@ -21,7 +21,8 @@ Override the maximum attempts or the drawing style in a specific post:
 ```
 
 The usual default is 6 failed attempts, which maps cleanly to head, body, arms,
-and legs. The tag clamps values outside the configured range.
+and legs. Other values do not need to be multiples of 6; the drawing stage is
+scaled proportionally. The tag clamps values outside the configured range.
 
 ## Administration
 

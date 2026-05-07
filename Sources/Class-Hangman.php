@@ -13,7 +13,7 @@ if (!defined('SMF'))
 final class Hangman
 {
     private const DEFAULT_MAX_ATTEMPTS = 6;
-    private const MAX_CONFIG_ATTEMPTS = 12;
+    private const MAX_CONFIG_ATTEMPTS = 99;
     private const DEFAULT_STYLE = 'simple';
     private const STYLES = ['simple', 'detailed'];
 
