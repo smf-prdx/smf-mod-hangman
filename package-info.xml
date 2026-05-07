@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package-info xmlns="http://www.simplemachines.org/xml/package-info">
+    <id>prdx:hangman</id>
+    <name>Hangman BBCode</name>
+    <version>1.0.0</version>
+    <type>modification</type>
+    <install for="2.1.*">
+        <readme parsebbc="false" type="file">README.md</readme>
+        <license type="file" parsebbc="false">LICENSE</license>
+        <hook hook="integrate_pre_load" function="Hangman::hooks#" file="$sourcedir/Class-Hangman.php" />
+        <redirect url="?action=admin;area=modsettings" />
+        <require-file name="Sources/Class-Hangman.php" destination="$sourcedir" />
+        <require-file name="Themes/default/css/Hangman.css" destination="$themedir/css" />
+        <require-dir name="Languages/Hangman" destination="$languagedir" />
+    </install>
+    <uninstall for="2.1.*">
+        <hook hook="integrate_pre_load" function="Hangman::hooks#" file="$sourcedir/Class-Hangman.php" reverse="true" />
+        <remove-file name="$sourcedir/Class-Hangman.php" />
+        <remove-file name="$themedir/css/Hangman.css" />
+        <remove-dir name="$languagedir/Hangman" />
+    </uninstall>
+</package-info>

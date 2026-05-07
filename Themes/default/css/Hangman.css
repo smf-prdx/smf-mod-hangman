@@ -1,0 +1,28 @@
+.hangman-box {
+  border-left: 3px solid #8794a6;
+  margin: 8px 0;
+  max-width: 18rem;
+  padding: 8px 10px;
+}
+
+.hangman-art {
+  background: transparent;
+  border: 0;
+  font-family: Consolas, Monaco, "Courier New", monospace;
+  font-size: 1rem;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  white-space: pre;
+}
+
+.hangman-meta {
+  color: #555;
+  font-size: 0.9em;
+  margin-top: 6px;
+}
+
+.hangman-is-hanged {
+  border-left-color: #b45f5f;
+}
